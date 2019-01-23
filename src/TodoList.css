@@ -1,0 +1,136 @@
+.todoListMain .header input {
+    padding: 10px;
+    font-size: 10px;
+    margin: 0px;
+    border: 2px solid #FFF;
+    border-radius: 0px;
+}
+
+.todoListMain .header select {
+    padding: 10px;
+    font-size: 10px;
+    margin: 10px;
+    border: 1px solid #FFF;
+    border-radius: 0px;
+}
+
+.todoListMain .header button {
+    padding: 10px;
+    font-size: 10px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: lightgreen;
+    color: #000;
+    border: 2px solid lightgreen;
+}
+
+.todoListMain .header button:hover {
+    background-color: green;
+    border: 2px solid green;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.todoListMain .theList div {
+    transition: border-radius .5s ease-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    color: #333;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+    float: left;
+    overflow: hidden;
+}
+
+.todoListMain .theList div:hover {
+    transition: border-radius .5s ease-out;
+    transition: opacity .5s ease-out;
+    opacity: 0.9;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+
+.todoListMain .theList button {
+    padding: 10px;
+    font-size: 10px;
+    margin: 10px;
+    background-color: lightsalmon;
+    color: #000;
+    border-radius: 5px;
+    float: right;
+
+    transition: background-color .5s ease-out;
+}
+
+.todoListMain .theListDiv li {
+    margin: 10px;
+    padding: 20px 10px 10px 10px;
+    border: 10px;
+    display: inline;
+}
+
+
+ul.theList {
+    padding: 0;
+}
+
+.todoListMain .theList button:hover {
+    background-color: red;
+    cursor: auto;
+}
+
+.todoListMain .theList._1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    background-color: crimson;
+}
+
+.todoListMain .theList._2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    background-color: rgb(248, 99, 0);
+}
+
+.todoListMain .theList._3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    background-color: rgb(238, 255, 0);
+}
+
+.todoListMain .theList._4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    background-color: lightgreen;
+}

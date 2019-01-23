@@ -1,0 +1,20 @@
+body {
+    padding : 50px;
+    background-color : #66CCFF;
+    font-family : sans-serif;
+
+}
+
+#container {
+    display : flex;
+    justify-content : flex;
+}
+
+#title {
+    font-family : 'Courier New', Courier, monospace;
+}
+
+h1:hover {
+   transition: color .5s ease-in-out;
+   color: white;
+}
