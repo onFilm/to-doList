@@ -16,9 +16,6 @@ class TodoItems extends React.Component {
     createTasks( item ) {
         return <div className={'theList _' + item.priority } key={item.key}><li>{item.text}</li><button onClick={() => this.delete(item.key)}>Remove</button></div>
     }
-
-  
-     componentD
  
     render () {
         var todoEntries =this.props.entries;
