@@ -1,13 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+### using npm 
 
-### `npm start`
+* Run `npm start`to start app in the development mode.
+* Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### using docker
+
+* Pull the image `docker pull mail2prajwal12/react-todolist:latest`
+* Run the container `docker run -d -p 3000:3000 --name react-todolist-app react-todolist`
 
 
 ## TO-DO LIST APP
