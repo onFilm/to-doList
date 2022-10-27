@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### using docker
 
 * Pull the image `docker pull mail2prajwal12/react-todolist:latest`
-* Run the container `docker run -d -p 3000:3000 --name react-todolist-app react-todolist`
+* Run the container `docker run -d -p 3000:3000 -v $(pwd):/app -v /node_modules --name react-todolist-app mail2prajwal12/react-todolist`
 
 
 ## TO-DO LIST APP
