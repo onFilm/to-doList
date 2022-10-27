@@ -16,7 +16,7 @@ jobs:
           script: |
             #!/bin/sh
             # Stop all running Docker Containers
-            # sudo docker kill $(docker ps -q)
+            # sudo docker kill $(docker ps -a | grep react-todolist | awk '{ print $1 }')
             # Free up space
             # sudo docker system prune -a
 
