@@ -17,10 +17,10 @@ jobs:
             #!/bin/sh
             
             # Just run below command
-            sudo docker ps -a | grep react-todolist | awk '{ print $1 }'
+            sudo docker rm $(sudo docker ps -a | grep react-todolist | awk '{ print $1 }') -f
             
             # Stop running react-todolist Docker Containers
-            sudo docker rm react-todolist -f
+            sudo docker rm react-todolist-app -f
             
             # Free up space
             sudo docker system prune -a
