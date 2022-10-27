@@ -9,10 +9,10 @@ jobs:
       - name: Deploy to Oracle Cloud via SSH action
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.PRIVATE_KEY }}
-          port: ${{ secrets.PORT }}
+          host: ${{ secrets.ORACLE_HOST }}
+          username: ${{ secrets.ORACLE_USERNAME }}
+          key: ${{ secrets.ORACLE_PRIVATE_KEY }}
+          port: 22
           script: |
             # Stop all running Docker Containers
             docker kill $(docker ps -q)
