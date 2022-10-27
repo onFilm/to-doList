@@ -14,6 +14,7 @@ jobs:
           key: ${{ secrets.ORACLE_PRIVATE_KEY }}
           port: 22
           script: |
+            #!/bin/sh
             # Stop all running Docker Containers
             # sudo docker kill $(docker ps -q)
             # Free up space
@@ -23,4 +24,4 @@ jobs:
             sudo docker pull mail2prajwal12/react-todolist:latest
 
             # Run a new container from a new image
-            sudo docker run -d -p 3000:3000 --name react-todolist-app mail2prajwal12/react-todolist:latest
+            sudo docker run -d --rm -p 3000:3000 --name react-todolist-app mail2prajwal12/react-todolist:latest
