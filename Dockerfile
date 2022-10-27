@@ -2,7 +2,7 @@
 FROM node:17
 
 #set work directory
-WORKDIR /app
+WORKDIR /src
 
 #copy package json 
 COPY package*.json ./

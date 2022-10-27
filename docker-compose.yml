@@ -5,5 +5,5 @@ services:
     ports:
       - "80:3000"
     volumes:
-      - .:/app:ro
-      - /node_modules
+      - .:/src:ro
+      - /src/node_modules
