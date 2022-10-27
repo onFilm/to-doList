@@ -1,0 +1,27 @@
+name: todolist-deploy
+on:
+  push:
+    branches: [ testDeployApp ]
+jobs:
+  build_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Oracle Cloud via SSH action
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            # Stop all running Docker Containers
+            docker kill $(docker ps -q)
+
+            # Free up space
+            docker system prune -a
+
+            # Pull the Docker Image 
+            docker pull mail2prajwal12/react-todolist:latest
+
+            # Run a new container from a new image
+            docker run -d -p 80:3000 -v $(pwd):/src:ro -v /node_modules -t mail2prajwal12/react-todolist:latest
