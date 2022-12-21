@@ -1,3 +1,4 @@
+name: Check dependency updates
 version: 2
 updates:
   # Keep npm dependencies up to date
