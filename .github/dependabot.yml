@@ -6,8 +6,8 @@ updates:
     target-branch: main
     schedule:
       interval: "daily"
-      time: "07:35"
-      timezone: "IST"
+      time: "07:37"
+      timezone: "Asia/Calcutta"
     pull-request-branch-name:
       separator: "-"
     labels:
